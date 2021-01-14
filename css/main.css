@@ -1,0 +1,291 @@
+* {
+    font-family: "Ubuntu";
+}
+
+body {
+    background: linear-gradient(#1a357c, #98479b);
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    background-color: #FFF;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 50px;
+}
+
+.app-title {
+    width: 600px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #293251;
+}
+
+.search {
+    margin: 0 auto;
+}
+
+.search-box {
+    margin: 10px 100px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+input {
+    margin: 0 auto;
+}
+
+.notification {
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p {
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container {
+    width: 600px;
+    height: 430px;
+    background-color: #F4F9FF;
+}
+
+.weather-icon {
+    margin: 0 auto;
+    width: 200px;
+    height: 128px;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value {
+    width: 600px;
+    height: 50px;
+}
+
+.temperature-value p {
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.feels-like {
+    width: 600px;
+    height: 30px;
+}
+
+.feels-like p {
+    padding: 0;
+    margin: 20px 0 0 0;
+    color: #293251;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover {
+    cursor: pointer;
+
+}
+
+.temperature-value span {
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.temperature-description p {
+
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.timezone p {
+    width: 200px;
+    margin: 20px auto 0 auto;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.location p {
+    width: 200px;
+    margin: 10px auto 0 auto;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.time p {
+    margin: 10px 0 0 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.sunrise {
+    margin: 0 0 0 50px;
+    padding: 0;
+    color: #293251;
+    /* text-align: center; */
+    font-size: 0.8em;
+    float: left;
+}
+
+.sunset {
+    margin: 0 50px 0 0;
+    padding: 0;
+    color: #293251;
+    text-align: right;
+    font-size: 0.8em;
+    float: right;
+}
+
+.pressure {
+    margin: 10px 0 10px 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.humidity {
+    width: 200px;
+    margin: 10px auto;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.wind-speed {
+    margin: 10px 30px 10px 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+    float: right;
+    cursor: pointer;
+}
+
+.wind-icon {
+    margin: 0;
+}
+
+.wind-icon img {
+    margin: 0;
+    width: 20px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+.wind-direction {
+    margin: 10px 0 10px 40px;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+    float: left;
+}
+
+.visibility {
+    margin: 10px 30px 10px 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+    float: right;
+    cursor: pointer;
+}
+
+.clouds {
+    margin: 10px 0 10px 40px;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+    float: left;
+}
+.precipitation-snow, .precipitation-rain{
+    float: right;
+    margin: 50px 30px 0 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.tipBtn {
+    float: left;
+    margin: 10px;
+    background-color: #fff;
+    color: #293251;
+    border: 1px solid #293251;
+    cursor: pointer;
+}
+
+#overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#overlay .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    font-size: 60px;
+    color: #86a8e7;
+    cursor: pointer;
+}
+
+#overlay li {
+    width: 800px;
+    padding: 8px;
+    list-style-type: circle;
+    font-size: 24px;
+    color: #fff;
+    display: block;
+}

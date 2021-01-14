@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="font/Rimouski.css"> -->
+    <link rel="stylesheet" href="font/ubuntu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>js30 project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="app-title"><p>Weather App</p>
+            <button class="tipBtn">Tips</button>
+        </div>
+        <div class="search">
+            <input type="text" autocomplete="off" class="search-box" placeholder="Enter city, country code and press Enter">
+        </div>
+        <div class="notification"></div>
+        <div class="weather-container">
+            <div class="precipitation-snow"><p></p></div>
+            <div class="precipitation-rain"><p></p></div>
+            <div class="weather-icon"></div>
+            <div class="temperature-value"><p>- ° <span>C</span></p></div>
+            <div class="sunrise"><p>-</p></div>
+            <div class="sunset"><p>-</p></div>
+            <div class="feels-like"><p>- ° <span>C</span></p></div>
+            <div class="wind">
+                <div class="wind-speed"><p>-</p></div>
+                <div class="wind-direction"><p>-</p></div>
+            </div>
+            <div class="wind-icon"><span></span></div>
+            <div class="temperature-description"><p>-</p></div>
+            <div class="pressure"><p>-</p></div>
+            <div class="clouds"><p>-</p></div>
+            <div class="visibility"><p>-</p></div>
+            <div class="humidity"><p>-</p></div>
+            
+            <div class="timezone"><p>-</p></div>
+            <div class="location"><p>-</p></div>
+            <div class="time"><p>-</p></div>
+            
+        </div>
+    </div>
+    
+    <div id = "overlay">
+        <a href="#" class="closebtn">&times;</a>
+        <ul class="tips">
+            <li>1. This app is built on the api of openweathermap.org.</li>
+            <li>2. Click on temparature to change degrees between Celsius and Fahrenheit.</li>
+            <li>3. Click on pressure to change between hectopascal (hPa) and millimeters of mercury (mmHg).</li>
+            <li>4. Click on wind speed to change between meters per second(m/s) and miles per hour(miles/h).</li>
+            <li>5. Click on visibility to change between kilometers (km) and miles (mi).</li>
+            <li>6. Note: sunrise and sunset time are not local: it shows your timezone.</li>
+         </ul>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
